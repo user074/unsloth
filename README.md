@@ -1,3 +1,16 @@
+# Note:
+Modification from Unsloth to support classification
+basically you can pass an argument of
+sequence_classification = True,  num_labels  = YOUR_NUMBER_OF_LABELS
+when you initialize the unsloth. an example is like this:
+model, tokenizer = FastLanguageModel.from_pretrained( model_name = YOUR_MODEL max_seq_length = max_seq_length, dtype = dtype, load_in_4bit = load_in_4bit, sequence_classification = True, num_labels = 3, )
+
+Probbaly need further testing and integration
+
+https://github.com/unslothai/unsloth/issues/372#issuecomment-2198635774
+
+
+
 <div align="center">
 
   <a href="https://unsloth.ai"><picture>
